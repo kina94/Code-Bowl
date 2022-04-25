@@ -17,12 +17,14 @@ function solution(progresses, speeds) {
             work=0
         } else {
             work = work + 1
+            console.log(work)
         }
         if(i===days.length-1){
             answer.push(work)
         }
     }
 
+    console.log(answer)
 return answer;
 }
 
