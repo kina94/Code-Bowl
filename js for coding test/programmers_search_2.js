@@ -21,7 +21,7 @@ function solution(numbers) {
                 if (!answer.includes(+newNum) && isPrimeNum(+newNum)){
                     answer.push(+newNum) // answer가 newNum이 없고 newNum이 소수인 경우에 push
                 }
-                getPermutation(copyArr, newNum); // 재귀함수로 계속 반복
+                getPermutation(copyArr, newNum); // 재귀함수로 i가 length에 도달할 때까지 계속 반복
             }
         }
     }
