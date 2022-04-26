@@ -10,7 +10,6 @@ function solution(answers) {
 
     Object.keys(person).map(people => {
         cnt = 0
-        j = 0
         for (i = 0; i < answers.length; i++) {
             if(answers[i] === person[people][i%person[people].length]){
                 cnt++
