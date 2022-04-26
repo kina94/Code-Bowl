@@ -28,5 +28,5 @@ function solution(bridge_length, weight, truck_weights) {
 
 var bridge_length=2 // 다리에 올라갈 수 있는 트럭 대수
 var weight = 10 // 다리가 견딜 수 있는 무게
-var truck_weights=[7,4,5,6]		 // 트럭 무게
+var truck_weights=[7,4,5,6] // 트럭 무게
 solution(bridge_length, weight, truck_weights)
