@@ -10,6 +10,8 @@ function solution(number, k) {
             k-- // 제외한 숫자 감소
         }
         stack.push(el)
+
+        console.log(i, ' ', k, ' ', stack)
     }
 
     stack.splice(stack.length-k, k)
