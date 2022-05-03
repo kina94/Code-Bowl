@@ -1,10 +1,11 @@
-function solution(n) {
-    var answer = 0;
-    let sqrt = Math.sqrt(n)
-    if(Number.isInteger(sqrt)) answer=(sqrt+1)**2
-    else answer = -1
+function solution(arr) {
+    function solution(arr) {
+        const index = arr.indexOf(Math.min(...arr));
+        arr.splice(index, 1);
+        return arr.length === 0 ? [-1] : arr;
+      }
     return answer;
 }
 
-let n = 123
+let n = [5,10,9,1,2,1]	
 solution(n)
