@@ -3,10 +3,14 @@ function solution(dartResult) {
     let arr = []
     let result = []
     const regex = /\d{1,2}[SDT]{1}[*|#]?/g;
+    //숫자가 최소 1개 이상 최대 2개 이하
+    //[SDT]가 최소 한개 1상
+    //*또는 |이 최대 한번 있거나 없거나
     arr = dartResult.match(regex)
 
     arr.map(dart =>{
         let game = dart.split(/([SDT]{1})/)
+        //SDT 기준 분리
         let score = Number(game[0])
         let bonus = 0;
         let option = 1;
