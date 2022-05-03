@@ -1,14 +1,10 @@
 function solution(n) {
     var answer = 0;
-    n = String(n)
-    n = n.split('')
-    n = n.sort((a,b)=>b-a)
-    n.map(item=>{
-        answer+=item
-    })
-    answer = Number(answer)
+    let sqrt = Math.sqrt(n)
+    if(Number.isInteger(sqrt)) answer=(sqrt+1)**2
+    else answer = -1
     return answer;
 }
 
-let n = 118372
+let n = 123
 solution(n)
