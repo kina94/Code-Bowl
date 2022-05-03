@@ -1,0 +1,14 @@
+function solution(n) {
+    var answer = 0;
+    n = String(n)
+    n = n.split('')
+    n = n.sort((a,b)=>b-a)
+    n.map(item=>{
+        answer+=item
+    })
+    answer = Number(answer)
+    return answer;
+}
+
+let n = 118372
+solution(n)
