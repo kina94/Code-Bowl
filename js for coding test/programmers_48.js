@@ -21,7 +21,7 @@ function solution(s) {
                     cnt = ''
                 }
                 cnt_arr.push([str_arr[j], String(cnt)])
-\                cnt = 1
+                cnt = 1
             }
         }
 
