@@ -1,5 +1,4 @@
 function solution(n){
-    let min = 1000
     let array = []
     for(let i=0; i<n.length; i++){
         let card = Math.min(...n[i])
