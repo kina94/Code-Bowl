@@ -15,5 +15,5 @@ function solution(k) {
     console.log(result)
 }
 
-let k = [1, 5, 4, 3, 2, 4, 5, 2] // 각 볼링공의 무게
+let k = [1, 5, 4, 3, 2, 4, 5, 2] // 각 볼링공의 무게, 인덱스는 공의 번호.
 solution(k)
