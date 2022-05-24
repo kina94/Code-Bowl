@@ -1,25 +1,21 @@
 function solution(n){
-    let cnt1 = 0 // 1로 바꾸기
-    let cnt0 = 0 // 0으로 바꾸기
-    if(n[0]==='1'){
-        cnt0++
-    } else{
-        cnt1++
+    n = n.split('').sort()
+    let array = []
+    if(Math.min(...n)!=1){
+        answer = 1
     }
 
-    for(let i=1; i<n.length; i++){
-        if(n[i]!=n[i+1]){
-            if(n[i]===0){
-                cnt1++
-            } else{
-                cnt0++
-            }
+    let target=1
+    n.map(item=>{
+        if(target<Number(item)){
+            return
+        } else{
+            target+=Number(item)
         }
-    }
+    })
 
-    let answer = Math.min(cnt1,cnt0)
-    return answer
+    return target
 }
 
-let n = '0001100'
+let n = '32119'
 solution (n)
